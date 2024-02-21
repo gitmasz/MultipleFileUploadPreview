@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="author" content="Marcin Szczepkowski">
+  <title>Multiple File Upload Preview</title>
+  <link href="css/styles.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="js/javascript-version.js"></script>
+</head>
+
+<body>
+  <table border="0" cellpadding="0" cellspacing="0" class="container">
+    <tr>
+      <td>
+        <div class="form-container">
+          <h1>Multiple File Upload Preview</h1>
+          <p>Show images thumbnail before upload.</p>
+          <form class="ajax-form test-upload" method="post" enctype="multipart/form-data">
+            <input id="upload-files" type="file" name="upload-files[]" accept=".jpg,.jpeg,.png,.webp"
+              multiple="multiple" required />
+            <label for="upload-files" class="button">Add images +</label>
+            <div class="hidden" id="upload-preview"></div>
+            <div class="submitbox"><input type="submit" class="button" value="Upload" /></div>
+          </form>
+        </div>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
