@@ -39,7 +39,7 @@ input#upload-files {
 input#upload-files+label {
   display: block;
   padding: 20px 40px 20px 40px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 600;
@@ -68,6 +68,7 @@ input#upload-files+label:focus {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+  color: #000;
   background: #eee;
   border: 1px solid #ccc;
   padding: 20px;
@@ -79,16 +80,29 @@ input#upload-files+label:focus {
   display: none;
 }
 
-#upload-preview div {
+#upload-preview div.title {
   flex-basis: 100%;
   text-align: center;
 }
 
-#upload-preview img {
+#upload-preview div.image {
   flex-basis: auto;
   width: 100%;
   max-width: 32%;
+  background: #fff;
+}
+
+#upload-preview div.image img {
+  display: block;
+  width: 100%;
   height: auto;
+}
+
+#upload-preview div.image span {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 form.ajax-form div.submitbox {
