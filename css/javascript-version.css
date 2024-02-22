@@ -89,6 +89,7 @@ input#upload-files+label:focus {
   width: 100%;
   max-width: 32%;
   height: auto;
+  max-height: 100px;
 }
 
 form.ajax-form div.submitbox {

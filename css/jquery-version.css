@@ -90,19 +90,27 @@ input#upload-files+label:focus {
   width: 100%;
   max-width: 32%;
   background: #fff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 #upload-preview div.image img {
+  flex-basis: 100%;
   display: block;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100px;
+  margin: auto;
 }
 
 #upload-preview div.image span {
+  flex-basis: 100%;
   display: block;
   text-align: center;
   font-size: 12px;
   line-height: 16px;
+  padding: 2px;
 }
 
 form.ajax-form div.submitbox {
